@@ -124,7 +124,7 @@ public class Main3Activity extends AppCompatActivity {
         intent.putExtra("name", event.getName());
         intent.putExtra("datetime", event.getDatetime().toString());
         intent.putExtra("local", event.getLocal().toString());
-        intent.putExtra("isOpen", event.getIsOpen());
+        intent.putExtra("isOpen", event.getStageEvent());
 
         startActivityForResult(intent, Constrants.REQUEST_EDIT);
     }
